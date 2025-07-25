@@ -146,7 +146,11 @@ services:
 # ========== #
 volumes:
   mysql_data:
+    external: true
+    name: mosofty_mysql_data
   postgres_data:
+    external: true
+    name: mosofty_postgres_data
 
 # ========== #
 #  NETWORKS  #
